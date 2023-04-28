@@ -65,6 +65,41 @@ $hover: grey;
     }
 }
 
+@media screen and (max-width: 1367px) {
+    .container {
+        height: 100vh;
+
+        #tudo {
+            padding-top: 2.5rem;
+            #img {
+                img {
+                    width: 195px;
+                    padding-top: 0;
+                }
+            }
+
+            #links {
+                a {
+                    padding: 0.5rem;
+                    margin: 0.5;
+                    transition: 0.2s;
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+
+            #footer {
+                padding-top: 1rem;
+                text-align: center;
+                margin: auto;
+                display: grid;
+                place-items: center;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 414px) {
     .container {
         #tudo {
@@ -105,6 +140,11 @@ $hover: grey;
 @media screen and (max-width: 390px) {
     .container {
         #tudo {
+            #img {
+                img {
+                    width: 155px;
+                }
+            }
             width: 300px;
             margin: auto;
             display: flex;
@@ -113,10 +153,55 @@ $hover: grey;
             flex-direction: column;
             #links {
                 a {
+                    img {
+                        display: block;
+                        width: 33.3px;
+                    }
                     width: 300px;
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-color: #191919;
+    }
+    .container {
+        width: 374px;
+        height: auto;
+        #tudo {
+            height: auto;
+            padding-top: 2.5rem;
+            #img {
+                img {width: 155px;}
+            }
+            #links {
+                a {
+                    img {
+                        display: block;
+                        width: 33.3px;
+                        filter: drop-shadow(2px 5px 25px black);
+                    }
+                }
+                #tw {
+                    background-color: indigo;
+                }
+    
+                #tt {
+                    background-color: rgb(33, 148, 255);
+                }
+
+                #ig {
+                    background: rgb(215, 16, 255);
+                }
+            }
+        }
+
+    }
+    #footer {
+        margin-top: 2rem;
     }
 }
 
@@ -129,7 +214,7 @@ $hover: grey;
         margin: auto;
         #img {
             img {
-                width: 255px;
+                width: 155px;
             }
         }
         #tudo {
