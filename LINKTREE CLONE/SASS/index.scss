@@ -29,6 +29,17 @@ $hover: grey;
 
         #links {
             padding-top: 3.5rem;
+            #tw {
+                    background-color: indigo;
+                }
+    
+                #tt {
+                    background-color: rgb(33, 148, 255);
+                }
+
+                #ig {
+                    background: rgb(215, 16, 255);
+                }
             a {
                 width: 700px;
                 background-color: rgb(56, 32, 192);
@@ -80,6 +91,17 @@ $hover: grey;
             }
 
             #links {
+                #tw {
+                    background-color: indigo;
+                }
+    
+                #tt {
+                    background-color: rgb(33, 148, 255);
+                }
+
+                #ig {
+                    background: rgb(215, 16, 255);
+                }
                 a {
                     padding: 0.5rem;
                     margin: 0.5;
@@ -103,8 +125,13 @@ $hover: grey;
 
 @media screen and (max-width: 414px) {
     .container {
+        display: grid;
+        place-items: center;
+        place-content: center;
+        width: 414px;
+        margin: auto;
         #tudo {
-            width: 390px;
+            margin: auto;
 
             #links {
                 margin: 0.6rem;
@@ -116,7 +143,12 @@ $hover: grey;
                 align-items: center;
                 a {
                     img {
-                        display: none;
+                        display: inline;
+                        margin: 0;
+                    }
+
+                    p {
+                        padding-left: 15px;
                     }
 
                     &:hover {
@@ -140,25 +172,34 @@ $hover: grey;
 
 @media screen and (max-width: 390px) {
     .container {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        margin: auto;
+        width: 390px;
         #tudo {
-            #img {
-                img {
-                    width: 155px;
-                }
-            }
-            width: 300px;
             margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            #img {
+                img {
+                    width: 155px;
+                }
+            }
             #links {
+                padding-top: 1.5rem;
+                margin: auto;
+                text-align: center;
+                display: grid;
+                place-content: center;
+                place-items: center;
                 a {
                     img {
                         display: block;
-                        width: 33.3px;
                     }
-                    width: 300px;
+                    width: 365px;
                 }
             }
         }
@@ -186,17 +227,6 @@ $hover: grey;
                         filter: drop-shadow(2px 5px 25px black);
                     }
                 }
-                #tw {
-                    background-color: indigo;
-                }
-    
-                #tt {
-                    background-color: rgb(33, 148, 255);
-                }
-
-                #ig {
-                    background: rgb(215, 16, 255);
-                }
             }
         }
 
@@ -213,6 +243,9 @@ $hover: grey;
     .container {
         width: 300px;
         margin: auto;
+        display: grid;
+        place-content: center;
+        place-items: center;
         #img {
             img {
                 width: 155px;
@@ -222,7 +255,14 @@ $hover: grey;
             width: 300px;
             margin: auto;
             #links {
-                width: auto;
+                width: 300px;
+                a {
+                    padding: 0.5rem;
+                    width: 300px;
+                    img {
+                        width: 50px;
+                    }
+                }
             }
         }
     }
